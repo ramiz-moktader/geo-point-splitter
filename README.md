@@ -4,7 +4,7 @@ A modular Python framework designed for geospatial remote sensing, Land Use / La
 
 ---
 
-## 1. Scientific Background & In-Text Citations
+## 1. Scientific Background
 
 ### 1.1 The Challenge of Spatial Autocorrelation in Geospatial Machine Learning
 Traditional random partitioning (such as naive train/test splits or standard $K$-fold cross-validation) assumes that samples are Independent and Identically Distributed ($i.i.d.$). However, geographic datasets strictly violate this assumption due to **spatial autocorrelation**—the phenomenon where geographically proximate observations share similar environmental, geological, and spectral properties (**Tobler, 1970**; **Legendre, 1993**).
@@ -272,7 +272,7 @@ print(report)
 
 ---
 
-## 7. Scientific References (2021–2026)
+## 7. References
 
 1. **Meyer, H., & Pebesma, E. (2022)**. Machine learning-based global maps of ecological variables and the challenge of assessing them. *Nature Communications*, 13(1), 2208. [DOI:10.1038/s41467-022-29838-9](https://doi.org/10.1038/s41467-022-29838-9).
 2. **Milà, C., Mateu, J., Pebesma, E., & Meyer, H. (2022)**. Nearest neighbour distance matching accounting for spatial autocorrelation in machine learning. *Methods in Ecology and Evolution*, 13(5), 1078-1087. [DOI:10.1111/2041-210X.13851](https://doi.org/10.1111/2041-210X.13851).
