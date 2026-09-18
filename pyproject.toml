@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spatial-point-splitter"
+version = "1.0.0"
+description = "A modular geospatial Python package for partitioning point datasets with spatial autocorrelation mitigation."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = [
+    "remote-sensing",
+    "spatial-autocorrelation",
+    "gis",
+    "cross-validation",
+    "spatial-cross-validation",
+    "machine-learning",
+    "land-use-land-cover",
+    "lulc"
+]
+authors = [
+    { name = "Spatial Data Science Contributor" }
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov"
+]
+
+[project.scripts]
+spatial-splitter = "split_spatial_points:main"
+
+[tool.setuptools.packages.find]
+include = ["spatial_splitter*"]
